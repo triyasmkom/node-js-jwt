@@ -1,0 +1,37 @@
+# register
+POST localhost:5001/users
+Content-Type: application/json
+
+{
+  "name": "triyas2",
+  "email": "triyas6@gmail.com",
+  "password": "123456",
+  "confirmPassword": "123456"
+}
+
+###
+# login
+POST localhost:5001/login
+Content-Type: application/json
+
+{
+  "email": "triyas2@gmail.com",
+  "password": "123456"
+}
+
+###
+# refresh token
+GET localhost:5001/token
+
+
+###
+# get user
+GET localhost:5001/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJmZ3NmcXdhIiwiZW1haWwiOiJ0cml5YXMyQGdtYWlsLmNvbSIsImlhdCI6MTY2ODk2MDAxMiwiZXhwIjoxNjY4OTYxMDEyfQ.5XS2r4R1r0JcOns_K-9v58bUu4Mz4P7d7vBNHG6Q73U
+
+###
+
+###
+# logout
+DELETE localhost:5001/logout
+
